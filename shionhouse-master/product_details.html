@@ -1,0 +1,200 @@
+{% extends 'base.html' %} {% block body %}
+
+<!-- header end -->
+<main>
+
+    <!-- breadcrumb Start-->
+    <div class="page-notification mb-md-5 mb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="index">Home</a></li>
+                            <li class="breadcrumb-item"><a href="shop">shop</a></li>
+                            <li class="breadcrumb-item"><a href="#">Product Details</a></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--breadcrumb End-->
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="product-main-image col-xl-4 col-lg-4 col-md-5 col-sm-5 col-12 px-1">
+                <img src="https://source.unsplash.com/500x700/?fashion">
+                <div class="product-image-overlay">
+                    <div class="product-images">
+                        <img src="https://source.unsplash.com/40x60/?fashion"
+                            onclick="document.querySelector('.product-main-image img').src = this.src;">
+                        <img src="https://source.unsplash.com/40x60/?clothing"
+                            onclick="document.querySelector('.product-main-image img').src = this.src;">
+                        <img src="https://source.unsplash.com/40x60/?accessories"
+                            onclick="document.querySelector('.product-main-image img').src = this.src;">
+                        <img src="https://source.unsplash.com/40x60/?shoes"
+                            onclick="document.querySelector('.product-main-image img').src = this.src;">
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-5 col-sm-5 col-12 p-md-5 mx-md-5">
+                <div class="mt-md-3 mt-4">
+                    <h1>Product Name</h1>
+                </div>
+                <div class="mt-4">
+                    <p style="font-size: 34px; font-family:Inter var; color: black;">$ 192.50</p>
+                </div>
+                <h2 for="colorSelect" class="mt-4">Color</h2>
+                <div class="mt-3">
+                    <span class="d-inline-block rounded-circle color-option" data-color="secondary"
+                      style="background-color: #6c757d; width: 40px; height: 40px; margin-right: 8px;"></span>
+                    <span class="d-inline-block rounded-circle color-option" data-color="danger"
+                      style="background-color: #dc3545; width: 40px; height: 40px; margin-right: 8px;"></span>
+                    <span class="d-inline-block rounded-circle color-option" data-color="success"
+                      style="background-color: #28a745; width: 40px; height: 40px; margin-right: 8px;"></span>
+                    <span class="d-inline-block rounded-circle color-option" data-color="primary"
+                      style="background-color: #007bff; width: 40px; height: 40px;"></span>
+                  </div>
+                  <input type="hidden" name="selected_color" id="selected-color">
+                <h2 for="sizeSelect" class="mt-4">Size</h2>
+                <div class="row p-sm-3 mt-3">
+                    <div class="col-auto border border-dark w-auto m-1 px-3 py-3 text-center size-option" data-value="Size 1">Size 1</div>
+                    <div class="col-auto border border-dark w-auto m-1 px-3 py-3 text-center size-option" data-value="Size 2">Size 2</div>
+                    <div class="col-auto border border-dark w-auto m-1 px-3 py-3 text-center size-option" data-value="Size 3">Size 3</div>
+                    <div class="col-auto border border-dark w-auto m-1 px-3 py-3 text-center size-option" data-value="Size 4">Size 4</div>
+                    <div class="col-auto border border-dark w-auto m-1 px-3 py-3 text-center size-option" data-value="Size 5">Size 5</div>
+                  </div>
+                <input type="hidden" name="selected_size" id="selected-size">
+                <h2 for="sizeSelect" class="mt-4">Quantity</h2>
+                <div class="row input-group ml-0 mt-3">
+                    <input id="decrement" class="btn col-3" type="button" value="+">
+                    <input type="text" name="quantity" class="form-control col-3 text-center border-0" id="myInput" value="1" readonly style="background-color: white;">
+                    <input id="increment" class="btn col-3" type="button" value="-">
+                </div>                
+                <div class="row mt-5">
+                    <input type="button" value="AddToCart" class="btn bg-success my-3 py-5 col-6 col-sm-9 col-lg-6 rounded-0">
+                    <input type="button" value="BuyNow" class="btn bg-primary my-3 py-5 col-6 col-sm-9 col-lg-6 rounded-0">
+                </div>
+                <div class="mt-5">
+                    <p>Short description of the product.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+          
+
+    <!--?  Details start -->
+    <div class="directory-details pt-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="small-tittle mb-20">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="directory-cap mb-40">
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered alteration in some form, by injected humour, or randomised words which don't look
+                            even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be
+                            sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum
+                            generators on the Internet tend to repeat predefined chunks as necessary, making this the
+                            first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined
+                            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+                        </p>
+                    </div>
+                    <div class="small-tittle mb-20">
+                        <h2>Description</h2>
+                    </div>
+                    <div class="gallery-img">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <img src="assets/img/gallery/gallery1.png" class="mb-30" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/img/gallery/gallery2.png" class="mb-30" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/img/gallery/gallery3.png" class="mb-30" alt="">
+                            </div>
+                            <div class="col-lg-6">
+                                <img src="assets/img/gallery/gallery4.png" class="mb-30" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="map">
+                        <img src="assets/img/gallery/map.png" alt="">
+                    </div>
+                    <div class="form-wrapper pt-80">
+                        <div class="row ">
+                            <div class="col-xl-12">
+                                <div class="small-tittle mb-30">
+                                    <h2>Contact</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <form id="contact-form" action="#" method="POST">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="form-box user-icon mb-15">
+                                        <input type="text" name="name" placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-box email-icon mb-15">
+                                        <input type="text" name="email" placeholder="Email address">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="form-box message-icon mb-15">
+                                        <textarea name="message" id="message" placeholder="Comment"></textarea>
+                                    </div>
+                                    <div class="submit-info">
+                                        <button class="submit-btn2" type="submit">Send Message</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--  Details End -->
+    <!-- listing-area Area End -->
+    <!--? Popular Locations Start 01-->
+    <div class="popular-product pt-50">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-product mb-50">
+                        <div class="location-img">
+                            <img src="assets/img/gallery/popular-imtes1.png" alt="">
+                        </div>
+                        <div class="location-details">
+                            <p><a href="product_details">Established fact that by the<br> readable content</a></p>
+                            <a href="product_details" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="single-product mb-50">
+                        <div class="location-img">
+                            <img src="assets/img/gallery/popular-imtes2.png" alt="">
+                        </div>
+                        <div class="location-details">
+                            <p><a href="product_details">Established fact that by the<br> readable content</a></p>
+                            <a href="product_details" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Popular Locations End -->
+
+    <!--? Services Area Start -->
+    {% include 'services.html' %}
+    <!--? Services Area End -->
+</main>
+{% endblock body %}
